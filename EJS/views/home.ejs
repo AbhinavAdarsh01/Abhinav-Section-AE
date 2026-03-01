@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1>Welcome to <%= name %></h1>
+    <p>This is Home Page</p>
+
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/about">About</a> |
+        <a href="/contact">Contact</a>
+    </nav>
+</body>
+</html>
+function fetchUser(){
+    return new Promise(resolve=>{
+        setTimeout(()=>{
+            resolve({id:1,name:"Krishna"});
+        },1500);
+    });
+}
+
+async function getUser(){
+    try{
+        const data=await fetchUser();
+        console.log(data);
+    }
+    catch(error){
+        console.log(error);
+
+    }
+}
+getUser();

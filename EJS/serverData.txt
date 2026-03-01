@@ -1,0 +1,4 @@
+welcome to reading the data through server
+Inside the placement you need demostrate your project using MERN Stack.
+
+And also having knowledge of genearative AI will the plus point for securing your SDE role. 
